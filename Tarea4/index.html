@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iram Cornejo Viveros">
+    <title>Media y Tablas</title>
+</head>
+<body>
+    <p>Esta es la imagen de Hornet</p>
+    <!--Etiqueta para imagenes externa el alt tiene peso semantico-->
+    <img src="https://th.bing.com/th/id/R.b83338e39e5d64abd7370022fcf44c56?rik=Za67tYwW7p6PFg&pid=ImgRaw&r=0" alt="Silksong">
+    
+    <p>Este soy yo</p>
+    <!--Etiqueta para imagenes internas-->
+    <img src="Imagenes/Hollow.jpg" alt="" width="900px" height="450px" >
+    
+    
+    <!--Etiqueta para video internas con el controls le das funcion al video -->
+    <!--width y height es para la dimencion del video o imagen y loop para que se reprodusca eternamente-->
+    <video src="Videos/Hollow Knight： Silksong - Release Trailer.mp4" controls loop width="400px" height="400px" ></video
+
+    <!-- Etiqueta de audio-->   
+    <audio src="Videos/Hornet, guarana.mp3" controls loop></audio>
+    <hr>
+    <br>
+    <!-- Tablas html-->
+    <H2>TABLAS HTML</H2>
+    <table border="1px">
+    <TR>
+        <!--th Es el encabezado de la tabla-->
+        <th>Pais</th>
+        <th>Capital</th>
+        <th>Lengua</th>
+        <th>Continente</th>
+        <th>Ciudad</th>
+    </TR>
+    <tr>
+        <td>México</td>
+        <td>Ciudad de México</td>
+        <td>Español</td>
+        <td>America</td>
+        <td>Ciudad De Neza</td>
+    </tr>
+    <!--Tres paises mas-->
+    <tr>
+        <td>Japon</td>
+        <td>Tokio</td>
+        <td>Japones</td>
+        <td>Asia</td>
+        <td>tokio</td>
+    </tr>
+    <tr>
+        <td>Brazil</td>
+        <td>Brazilia</td>
+        <td>Portuges</td>
+        <td>America</td>
+        <td>Brazilia</td>
+    </tr>
+    <tr>
+        <td>España</td>
+        <td>Madrid</td>
+        <td>Español</td>
+        <td>Europa</td>
+        <td>Madrid</td>
+    </tr>
+    
+    </table>
+    
+    <!--Tablas con celdas funsionadas HTML-->
+    <hr>
+    <table border="1px">
+        <caption>Autos</caption>
+        <tr>
+            <!--Se fusiona dos filas-->
+            <th rowspan="2">MODELO</th>
+            <!--se fusionan dos columnas-->
+            <th colspan="2">PRECIO</th>
+        </tr>
+        <tr>
+            <th>NUEVO</th>
+            <TH>USADO</TH>
+        </tr>
+        
+        <tr>
+            <th>Ferrari Italia</th>
+            <TH>$10,000,000</TH>
+            <TH>$5,000,000</TH>
+        </tr>
+    </table>
+
+</body>
+</html>
