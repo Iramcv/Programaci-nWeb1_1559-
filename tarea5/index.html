@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iram Cornejo Viveros">
+    <title>Listas y formulas</title>
+</head>
+<body>
+    <h1>Listas y formulas</h1>
+    <h2>Listas</h2>
+
+    <!--Listas Desordenadas -->
+    <ul>
+        <!--Li es un elemento de la lista con un punto-->
+        <li>Leche</li>
+        <li>Huevos</li>
+        <li>Carne</li>
+        <li>Pollo</li>
+        <li>Jamon</li>
+    </ul>
+    
+    <!--Listas ordenadas-->
+    <ol type="i" start="2">
+        <!--Li sera un elemento de la desta con numeros ordenados-->
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+        <li>Cuarto</li>
+        <li>Quinto</li>
+    </ol>
+
+    <!--Lista de definiciones-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lenguaje de marcado de Hipertexto</dd>
+        <dt>CSS</dt>
+        <dd>Hoja de estilos de Cascada</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
+<hr>
+    <!--Listas anidadas-->
+    <p>Desarrollo Web</p>
+    <ul>
+        <li>Frontend
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </li>
+        <li>Backend
+            <ol>
+                <li>NodeJS</li>
+                <li>MySQL</li>
+                <li>Debian</li>
+            </ol>
+        </li>
+    </ul>
+<hr>
+    <!--Formulario-->
+    <p>Formulario de inicio de sesion</p>
+    <!--action es la ruta o archivo donde el servidor valida el inicio de seccion-->
+   <!--Peticiones con cliente servidor con method-->
+   <!--Son elementos de linea-->
+    <form action="/inicio_sesion" method="">
+        <label for="username">Nombre de usuario:</label>
+       <!--Para que puedan ingresar datos el usuario-->
+       <!--id es para relacionarlos asi como esta en username-->
+       <!--Es donde guarda las variables intruducido por el usuario-->
+        <input type="text" id="username" name="username" placeholder="Intruduce nombre" required>
+
+        <label for="password">Contraseña</label>
+        <input type="text" id="password" name="password" placeholder="Intruduce contraseña" required>
+        <!--submit hace enbiar los datos guardados -->
+        <button type="submit">Enviar</button>
+
+    </form>
+<br>
+<br>
+<p>hsda</p>
+
+
+</body>
+</html>
