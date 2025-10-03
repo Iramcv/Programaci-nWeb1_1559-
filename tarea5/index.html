@@ -71,17 +71,89 @@
        <!--id es para relacionarlos asi como esta en username-->
        <!--Es donde guarda las variables intruducido por el usuario-->
         <input type="text" id="username" name="username" placeholder="Intruduce nombre" required>
-
+        <br>
         <label for="password">Contraseña</label>
-        <input type="text" id="password" name="password" placeholder="Intruduce contraseña" required>
-        <!--submit hace enbiar los datos guardados -->
+        <input type="password" id="password" name="password" placeholder="Intruduce contraseña" required>
+        <!--submit hace enviar los datos guardados -->
+        <!--required para que el campo sea obligatorio-->
+        <br>
         <button type="submit">Enviar</button>
 
     </form>
 <br>
 <br>
-<p>hsda</p>
+<p>Formulario con campo de entrada de varias lineas</p>
+    
+    <form action="/validacion.php" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name" required placeholder="Introduce tu nombre">
+        <br>
+        <label for="opinion">Comentarios:</label>
+        <textarea name="opinion" id="opinion" rows="4" cols="40" placeholder="Tu opinion es Inportante"></textarea>
 
+    </form>
+    <p>Formularios con listas desplegables de opciones</p>
+    <form action="/seleccion_bebidas_postres" method="post">
+        <label for="bebidas">bebidas</label>
+        <select name="bebidas" id="bebidas" >
+            <option value="limonada">Limonada</option>
+            <option value="naranjada">Naranjada</option>
+            <option value="refresco">Refresco</option>
+            <option value="licuiado">Licuiado</option>
+            <option value="agua">Agua</option>
+        </select>
+        <br>
+        <label for="postres">Postres</label>
+        <select name="postres" id="postres" >
+            <option value="pay_limon">Pay de Limon</option>
+            <option value="pastel_chocolate">Pastel de chocolate</option>
+            <option value="pay_fresa">Pay de fresa</option>
+            </select>
+            <br>
+            <button type="submit">Enviar</button>
+    </form>
+
+    <p>Formularios complejos con distintos campos de datos</p>
+    <form action="/datos_usuario" method="post">
+    <fieldset>
+        <legend>Nombre</legend>
+        <label for="nombre">Nombre(s):</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="ap_paterno">Apellido Paterno</label>
+        <input type="text" name="ap_paterno" id="ap_paterno" required>
+        <br>
+        <label for="ap_materno">Apellido Materno</label>
+        <input type="text" name="ap_materno" id="ap_materno" required>
+    </fieldset>
+    <fieldset>
+        <legend>Otros datos</legend>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+        <br>
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+        <br>
+        <label for="num_cuenta">Numero de cuenta:</label>
+        <input type="text" name="num_cuenta" id="num_cuenta" minlength="8" maxlength="9" placeholder="Ingresa tu numero de cuenta de la unam" required>
+        <br>
+        <label for="email">Correo Electronco:</label>
+        <input type="email" name="email" id="email" required>
+    </fieldset>
+    <fieldset>
+        <legend>Direccion</legend>
+        <label for="calle">Calle:</label>
+        <input type="text" id="calle" name="calle" value="Emiliano Zapata" required>
+        <br>
+        <label for="num_casa">Numero de Casa:</label>
+        <input type="text" name="num_casa" id="num_casa" minlength="8" maxlength="9" placeholder="Ingresa tu numero de Casa" required>
+        <br>
+        <label for="colonia">Colonia</label>
+        <input type="text" name="colonia" id="colonia" required>
+    </fieldset>
+    
+<button type="submit">Enviar</button>
+    </form>
 
 </body>
 </html>
