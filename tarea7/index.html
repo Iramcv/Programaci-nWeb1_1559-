@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="Cornejo Viveros Iram">
+
+    <title>Fundamentos de css</title>
+   
+   <link rel="stylesheet" type="text/css" href="css/estilos.css">
+   <!--`*Clases son estilos que se repiten Por ejemplo cuando quieres que se utilice el mismo formato para otras cosas 
+        *Los identificadodes se van a ocupar en estilos especificos a elemento o secciones que son unicos en nuestra página
+        se ocupan para navegar a seccines de nuestra misma pagina 
+   -->
+
+ <!--<style>
+        h1{
+            color:burlywood
+        }
+
+    </style>
+    -->  
+</head>
+<body>
+    <section>
+        <h1 id="titulo">Maneras de agregar estilos a nuestra página web</h1>
+        <article>
+            <h2>Estilos en linea</h2>
+            <p>Estos estilos se agregan directamente al elemento html, mediante el atributo <code>style</code>
+            </p>
+            <p style="background-color: rgb(124, 161, 241);">Este parrafo tiene estilos en línea</p>
+        </article>
+        <article  class="estilos--internos">
+            <h2>Estilos internos</h2>
+            <p>
+                Estos estilos se agregan en el mismoarchivo html, dentro de la etiqueta <code>&lt;head&gt;</code> y se utiliza la etiqueta <code>&lt;style&gt;</code>
+            </p>
+        </article>
+        <article>
+            <h2> Estilos externos</h2>
+            <p>Estos estilos son los que se recomiendan ya que se ofecen modularidad, facil mantenimiento, orden, eficiencia, 
+                entre otras ventejas, para agregar una hoja de estilos externa de la etiqueta
+                <code>&lt;head&gt;</code> se va utilizar etiqueta
+                <code>&lt;link&gt;</code> 
+                </p>
+        </article>
+    </section>
+</body>
+</html>

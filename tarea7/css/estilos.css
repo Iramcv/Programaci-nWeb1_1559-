@@ -1,0 +1,15 @@
+article{
+    background-color: hwb(183 62% 4%);
+}
+
+.estilos--internos{
+
+    background-color: darkgray;
+}
+
+#titulo{
+    color: darkcyan;
+}
+body{
+    background-color: hwb(318 79% 12%);
+}
