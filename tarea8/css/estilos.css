@@ -1,0 +1,57 @@
+/*Modelos
+-RGB
+-RGBA
+-HEXADECIMAL
+-HSL
+*/
+.rgb{
+    color: rgb(255,0,0);
+    background-color: rgb(0,0,0);
+}
+.rgba{
+    color: rgba(0,255,0,1);
+    background-color: rgba(red, green, blue, alpha);
+}
+.hex{
+    color: #0000ff;
+    background-color: #b3368d;
+} 
+.hsl{
+    color: hsl(59, 99%, 41%, 0.775);
+    background: hsl(0, 0%, 0%,0.999);
+}
+.lista--colores{
+    background-color: gray;
+}
+
+.black{
+    color: black;
+}
+.white{
+    color: white;
+}
+.salmon{
+    color: salmon;
+}
+.blue{
+    color: blue;
+}
+.lime{
+    color: lime;
+}
+/* Otras propiedades de colores::after
+-boeder
+-blackgraund-image
+*/
+.borde{
+    /*border-style: solid;
+    border-color: aqua;
+    border-width: 10px;*/
+    border: 3px solid aqua;
+}
+.lineal{
+    background-image:  linear-gradient(to top, red, aqua);
+}
+.radial{
+    background-image: radial-gradient(circle, rgb(179, 108, 163), rgb(141, 44, 136));
+}
