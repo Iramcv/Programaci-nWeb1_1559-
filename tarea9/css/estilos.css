@@ -1,0 +1,40 @@
+#encabezado{
+    color: white;
+    background-color: black;
+}
+
+.fondo-imagen{
+ /*Background-image: permite agregar imagenes como fondo de un contenedor o elemento HTML, tambien se pueden agregar gradiantes*/   
+ background-image: url(../imagenes/Kiriko.jpg), radial-gradient(ellipse,rgb(212, 25, 25),rgba(42, 130, 99, 0.932));
+
+/* bacground-size(cover,contain,width(px)-heigth(x))
+Va a especificar el tamaño de la imagen de fondo
+*/
+background-size: contain;
+/*background-repeat:repat, repeat-x, repeat-y, y no_repeat 
+aplica cuando la imagen es mas pequeña que el contenedor */
+background-repeat: no-repeat;
+
+/*ackground-position: (top, buttom,left,rigth y center)
+establecela pisicion inicial de la imagen en su contenedor*/
+background-position: center;
+
+ height: 1000px;
+ width: 1000px;
+ color: white ;
+ border: 2px solid purple;
+
+ /*background-attachment: (scroll y fixed)
+Se utiliza para que la imagen se quede fija en su contenedor cuando se desplaza por la pagina */
+
+ /*background-attachment: fixed;*/
+}
+.fondo--imagen{
+    /* bacground (image)/(position)/(size)/(repaet)/(attachment),(color) */
+    background: url(../imagenes/overwatch-2-juno-2.avif) center/ contain no-repeat scroll rgb(116, 14, 142);
+    
+ height: 1000px;
+ width: 1000px;
+ color: white ;
+ border: 2px solid purple;
+}
