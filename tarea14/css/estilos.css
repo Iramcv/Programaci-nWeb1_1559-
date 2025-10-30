@@ -1,0 +1,50 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor--flotante{
+    border: 0.3em dashed salmon;
+    
+}
+.contenedor--flotante img{
+    width: 30%;
+    height: 20%;
+    float:inline-start;
+}
+.contenedor--flotante p{
+    font-family: Georgia;
+    text-align: justify;
+    font-size: 1.5em;
+}
+.contenedor--flotante-2{
+    border: 0.3em dashed salmon;
+    
+}
+.contenedor--flotante-2 img{
+    width: 30%;
+    height: 20%;
+    float:inline-end;
+}
+.contenedor--flotante-2 p{
+    font-family: Georgia;
+    text-align: justify;
+    font-size: 1.5em;
+}
+/*cONSULTAS DE MEDIOS O MEDIAS QUERIES:
+SIRVEN PARA DEFINIR ESTILOS A ELEMENTOS HTML, 
+SEGUN EL TAMAÑO DE LA PANTALLA DEL DISPOSITIVO USADO, GRACIAS A ESTO, 
+SE NOS PROPORCIONA UNA HERRAMIENTRA PARA LA CREACION DE DISEÑOS WEB RESPONSIVOS Y ADAPTABLES
+*/
+
+@media screen and (max-width: 300px){
+    .contenedor--flotante p{
+        font-family: Georgia;
+        text-align: justify;
+        font-size: 3em;
+    }
+}

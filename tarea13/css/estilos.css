@@ -1,0 +1,35 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor--tabla{
+    border:0.1em dashed rgb(255, 150, 232);
+    padding: 0.2em;
+    overflow: scroll;
+}
+.tabla--alumnos{
+    font-size: 2em; /*Es para el tamaño en la tabla*/
+    width: 100%;
+    border-collapse: collapse;  
+    min-width: 30em; /*(Es cuando minimizas la pagina y como se ve se va ajustando)*/
+
+}
+.tabla--alumnos th,td{
+    border: 0.1em solid rgb(253, 160, 249);
+    text-align: center;
+    padding: 0.2;
+}
+.tabla--alumnos th{
+    background-color: rgb(230, 139, 207);
+    color: white;
+}
+.tabla--alumnos tr:hover{
+    background-color: rgb(255, 194, 250);
+}
+.tabla--alumnos tr:nth-child(even){
+ background-color: rgba(206, 101, 183, 0.637); /*(even para marcar numero par odd es para inpar )*/
+}
