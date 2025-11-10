@@ -1,0 +1,74 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(circle, rgb(90, 90, 161),rgb(67, 37, 150));
+    background-repeat: no-repeat;
+}
+.contenedor-grid{
+    color:aliceblue;
+    border: 0.2em solid rgb(0, 0, 0);
+    padding: 0.2em;
+    /*Convertir el contenedor en cuadricula */
+    display: grid;
+    width: 30em ;
+    height: 30em;
+    /*Se declaran las columnas (tamanio) de la cuadricula 
+    Aceptan valores fijos, relativos, porcentajes, outo y se puede utiliarfr para definir una 
+    */
+    grid-template-columns: 5em 5em 5em;
+    /*Se declaran los renglones o filas de la cuadricula */
+
+    grid-template-rows: 10em 10em;
+    /*Alinear items en la fila (eje en linea) (start, end, center,stretch)*/
+    justify-items: center;
+    /*Alinear items en la columna (eje en columna) (start, end, center,stretch)*/
+    align-items: center;
+    /*place-items: stretch; */
+    /*Alinear la cuadricula a lo largo de eje en linea(fila)
+    */
+    justify-content: space-around;
+   /*Alinear la cuadricula a lo largo de eje en linea(columna)
+    */
+    align-content: space-evenly ;
+}
+.Objeto-grid{
+    background-color: rgb(90, 90, 150);
+    border: 0.1em dashed white;
+}
+.contenedor-grid1{
+    color:aliceblue;
+    border: 0.2em solid rgb(0, 0, 0);
+    padding: 0.2em;
+    /*Convertir el contenedor en cuadricula */
+    display: grid;
+
+    /*Se declaran las columnas (tamanio) de la cuadricula 
+    Aceptan valores fijos, relativos, porcentajes, outo y se puede utiliarfr para definir una 
+    */
+    grid-template-columns: auto auto auto;
+    /*Se declaran los renglones o filas de la cuadricula */
+
+    grid-template-rows:auto;
+    /*Alinear items en la fila (eje en linea) (start, end, center,stretch)*/
+    justify-items: stretch;
+    /*Alinear items en la columna (eje en columna) (start, end, center,stretch)*/
+    align-items: stretch;
+    /*place-items: stretch; */
+    /*Alinear la cuadricula a lo largo de eje en linea(fila)
+    */
+   /*Alinear la cuadricula a lo largo de eje en linea(columna)
+    */
+}
+.Objeto-grid1{
+    background-color: rgb(90, 90, 150);
+    border: 0.1em dashed white;
+}
+.Objeto-grid1:nth-child(2){
+    color: black ;
+    grid-column: 1/2;
+    grid-row: 1;
+}
